@@ -1,0 +1,13 @@
+
+{
+  "id": "./",
+  "name": "Mithon Mondol",
+  "short_name": "Mithon",
+  "description": "Mithon Mondol Restaurant Management and Accounting App",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#14532d"
+}
