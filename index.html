@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<div class="app">
+  <header class="topbar">
+    <div>
+      <h2>🍽️ Mithon Mondol</h2>
+      <small>Restaurant Management System</small>
+    </div>
+  </header>
+
+  <section id="loginScreen" class="login-screen">
+    <div class="login-box">
+      <div class="logo">🍽️</div>
+      <h2>Mithon Mondol</h2>
+      <p>আপনার অ্যাকাউন্টে Login করুন</p>
+
+      <label>Account নির্বাচন করুন</label>
+      <select id="userRole">
+        <option value="owner">Owner / মালিক</option>
+        <option value="manager">Manager / ম্যানেজার</option>
+        <option value="worker">Worker / কর্মচারী</option>
+      </select>
+
+      <label>ID</label>
+      <input id="loginId" type="text" placeholder="আপনার ID লিখুন">
+
+      <label>Password</label>
+      <input id="loginPassword" type="password" placeholder="Password লিখুন">
+
+      <button class="primary-btn" onclick="mmLogin()">Login করুন</button>
+      <p id="loginMessage" class="message"></p>
+
+      <div class="demo-info">
+        <b>পরীক্ষামূলক Login</b>
+        <p>Owner: 100001</p>
+        <p>Manager: 200001</p>
+        <p>Worker: 300001</p>
+        <small>তিনটির Demo Password: 123456</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="dashboard" style="display:none;">
+    <div class="welcome">
+      <h2 id="welcomeTitle">স্বাগতম</h2>
+      <p id="welcomeText"></p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <span>💰</span>
+        <small>আজকের বিক্রি</small>
+        <h3>৳ ০</h3>
+      </div>
+      <div class="stat-card">
+        <span>📒</span>
+        <small>মোট বাকি</small>
+        <h3>৳ ০</h3>
+      </div>
+      <div class="stat-card">
+        <span>👨‍🍳</span>
+        <small>কর্মচারী</small>
+        <h3>০ জন</h3>
+      </div>
+      <div class="stat-card">
+        <span>💸</span>
+        <small>আজকের খরচ</small>
+        <h3>৳ ০</h3>
+      </div>
+    </div>
+
+    <h3 class="section-title">কাজের মেনু</h3>
+    <div id="menuGrid" class="menu-grid"></div>
+
+    <section id="page" class="page">
+      <h3>🏠 Dashboard</h3>
+      <p>একটি মেনু নির্বাচন করুন।</p>
+    </section>
+
+    <button class="logout-btn" onclick="mmLogout()">Logout</button>
+  </section>
+
+  <footer>© Mithon Mondol Restaurant</footer>
+</div>
